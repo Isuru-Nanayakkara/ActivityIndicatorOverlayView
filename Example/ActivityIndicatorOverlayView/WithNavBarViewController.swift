@@ -14,12 +14,12 @@ class WithNavBarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ActivityIndicatorOverlayView.shared.showProgressView()
+        ActivityIndicatorOverlayView.shared.show()
         setCloseTimer()
     }
     
     @objc func close() {
-        ActivityIndicatorOverlayView.shared.hideProgressView()
+        ActivityIndicatorOverlayView.shared.hide()
     }
     
     func setCloseTimer() {
@@ -32,7 +32,7 @@ class WithNavBarViewController: UIViewController {
     
     @IBAction func showButtonTapped(_ sender: UIButton) {
         ActivityIndicatorOverlayView.shared.backgroundColor = UIColor.init(red: CGFloat(redSlider.value/255.0), green: CGFloat(greenSlider.value/255.0), blue: CGFloat(blueSlider.value/255.0), alpha: CGFloat(alphaSlider!.value))
-        ActivityIndicatorOverlayView.shared.showProgressView()
+        ActivityIndicatorOverlayView.shared.show()
         setCloseTimer()
     }
     

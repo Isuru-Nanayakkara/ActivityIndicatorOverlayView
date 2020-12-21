@@ -14,12 +14,12 @@ class WithoutNavBarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ActivityIndicatorOverlayView.shared.showProgressView()
+        ActivityIndicatorOverlayView.shared.show()
         setCloseTimer()
     }
     
     @objc func close() {
-        ActivityIndicatorOverlayView.shared.hideProgressView()
+        ActivityIndicatorOverlayView.shared.hide()
     }
     
     func setCloseTimer() {
@@ -27,7 +27,7 @@ class WithoutNavBarViewController: UIViewController {
     }
     
     @IBAction func showButtonTapped(_ sender: UIButton) {
-        ActivityIndicatorOverlayView.shared.showProgressView()
+        ActivityIndicatorOverlayView.shared.show()
         setCloseTimer()
     }
     
