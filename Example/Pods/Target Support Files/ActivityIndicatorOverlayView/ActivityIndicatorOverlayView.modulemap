@@ -1,0 +1,6 @@
+framework module ActivityIndicatorOverlayView {
+  umbrella header "ActivityIndicatorOverlayView-umbrella.h"
+
+  export *
+  module * { export * }
+}

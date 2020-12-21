@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ActivityIndicatorOverlayView'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of ActivityIndicatorOverlayView.'
+  s.version          = '1.0.0'
+  s.summary          = 'An view that can be used to cover the entire active screen when a task is performing.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,9 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  						Sometimes apps need to perform long running tasks. Such as networking calls. 
+  						During that time, you don't want impatient users tapping and messing around with the app UI.
+  						ActivityIndicatorOverlayView is a view that can be presented while such a task is undergoing to stop interations with the UI.
                        DESC
 
   s.homepage         = 'https://github.com/Isuru-Nanayakkara/ActivityIndicatorOverlayView'
@@ -26,9 +28,9 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Isuru-Nanayakkara' => 'isuru.nan@gmail.com' }
   s.source           = { :git => 'https://github.com/Isuru-Nanayakkara/ActivityIndicatorOverlayView.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  # s.social_media_url = 'https://twitter.com/bitinvent'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '13.0'
 
   s.source_files = 'ActivityIndicatorOverlayView/Classes/**/*'
   
@@ -37,6 +39,7 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.swift_version = '5.0'
 end

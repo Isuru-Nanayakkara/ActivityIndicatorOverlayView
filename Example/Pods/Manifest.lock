@@ -1,0 +1,16 @@
+PODS:
+  - ActivityIndicatorOverlayView (0.1.0)
+
+DEPENDENCIES:
+  - ActivityIndicatorOverlayView (from `../`)
+
+EXTERNAL SOURCES:
+  ActivityIndicatorOverlayView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ActivityIndicatorOverlayView: a2d8cd1fadae8c438e20b1404493c84d893093ed
+
+PODFILE CHECKSUM: dbc5ad0b26907d626cf2d7d4b8b85d36267aa44d
+
+COCOAPODS: 1.10.0
