@@ -94,7 +94,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.71454939449999999" green="1" blue="0.67225112970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="gVx-Bw-w3r" firstAttribute="top" secondItem="6e3-ck-44s" secondAttribute="bottom" constant="8" id="0YA-fj-k65"/>
                             <constraint firstAttribute="trailing" secondItem="6gt-Kg-PAy" secondAttribute="trailing" constant="16" id="6X8-rJ-ACY"/>
@@ -173,14 +173,14 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.92120724919999997" green="0.84832113980000001" blue="0.62377804520000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cAO-d5-2gW" firstAttribute="centerY" secondItem="b2J-CL-UHW" secondAttribute="centerY" id="Euw-6E-arV"/>
                             <constraint firstItem="cAO-d5-2gW" firstAttribute="leading" secondItem="b2J-CL-UHW" secondAttribute="leading" constant="16" id="GGI-uS-hcd"/>
                             <constraint firstAttribute="trailing" secondItem="cAO-d5-2gW" secondAttribute="trailing" constant="16" id="HX8-ek-Eaf"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Without Nav Bar" id="fCK-6Q-XDB"/>
+                    <tabBarItem key="tabBarItem" title="Without Nav Bar" image="rectangle.roundedtop" catalog="system" id="fCK-6Q-XDB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jce-zI-tAg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -190,7 +190,7 @@
         <scene sceneID="P2f-Gs-Vpb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="v0l-79-e1Y" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="With Nav Bar" id="snN-1m-5Gl"/>
+                    <tabBarItem key="tabBarItem" title="With Nav Bar" image="rectangle.topthird.inset" catalog="system" id="snN-1m-5Gl"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PCW-2J-Hth">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -206,4 +206,8 @@
             <point key="canvasLocation" x="-2287" y="917"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="rectangle.roundedtop" catalog="system" width="128" height="91"/>
+        <image name="rectangle.topthird.inset" catalog="system" width="128" height="93"/>
+    </resources>
 </document>

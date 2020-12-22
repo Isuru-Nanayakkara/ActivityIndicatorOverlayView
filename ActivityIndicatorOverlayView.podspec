@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ActivityIndicatorOverlayView'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'An view that can be used to cover the entire active screen when a task is performing.'
 
 # This description is used to generate tags and improve search results.

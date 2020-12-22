@@ -23,7 +23,7 @@ class WithNavBarViewController: UIViewController {
     }
     
     func setCloseTimer() {
-        _ = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(close), userInfo: nil, repeats: false)
+        _ = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(close), userInfo: nil, repeats: false)
     }
     @IBOutlet weak var redSlider: UISlider!
     @IBOutlet weak var greenSlider: UISlider!
@@ -31,7 +31,7 @@ class WithNavBarViewController: UIViewController {
     @IBOutlet weak var alphaSlider: UISlider!
     
     @IBAction func showButtonTapped(_ sender: UIButton) {
-        ActivityIndicatorOverlayView.shared.backgroundColor = UIColor.init(red: CGFloat(redSlider.value/255.0), green: CGFloat(greenSlider.value/255.0), blue: CGFloat(blueSlider.value/255.0), alpha: CGFloat(alphaSlider!.value))
+        ActivityIndicatorOverlayView.shared.overlayViewColor = UIColor.init(red: CGFloat(redSlider.value/255.0), green: CGFloat(greenSlider.value/255.0), blue: CGFloat(blueSlider.value/255.0), alpha: CGFloat(alphaSlider!.value))
         ActivityIndicatorOverlayView.shared.show()
         setCloseTimer()
     }

@@ -23,7 +23,7 @@ class WithoutNavBarViewController: UIViewController {
     }
     
     func setCloseTimer() {
-        _ = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(close), userInfo: nil, repeats: false)
+        _ = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(close), userInfo: nil, repeats: false)
     }
     
     @IBAction func showButtonTapped(_ sender: UIButton) {
